@@ -14,12 +14,12 @@ app.use("/static", express.static("static"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve the login page
-app.get("/login", (req, res) => {
+app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "/static/login.html")); // Ensure login.html is correctly located
 });
 
 // Handle login form submission
-app.post("/form", (req, res) => {
+app.post("/content", (req, res) => {
     const { email, password } = req.body;
 
     // Check if email and password are both 'admin'
