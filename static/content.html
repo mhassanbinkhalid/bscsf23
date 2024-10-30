@@ -15,38 +15,43 @@
     <div id="contentcontainer">
         <div id="containerhead">
             <div class="containertitle" id="name">NAME</div>
-            <div class="containertitle" id="date">UPLOADED</div>
+            <div class="containertitle" id="date">UPDATED</div>
             <div class="containertitle" id="views">FILES</div>
         </div>
         <div id="maincontent">
 
-            <div class="content folders" onclick="downloadFolder('OOP')">Object Oriented Programming</div>
-            <div class="content uploaddate">29-10-24</div>
-            <div class="content viewsbox">25</div>
+            <div class="content folders" onclick="downloadFolder('https://www.mediafire.com/folder/fb4stp2piu31y/OBJECT_ORIENTED_PROGRAMMING')">Object Oriented Programming</div>
+            <div class="content uploaddate">30/10/24</div>
+            <div class="content viewsbox">1</div>
 
-            <div class="content folders" onclick="downloadFolder('AL')">Computer Organ.. & Assembly Language</div>
-            <div class="content uploaddate">29-10-24</div>
-            <div class="content viewsbox">23</div>
+            <div class="content folders" onclick="downloadFolder('https://www.mediafire.com/folder/uykediwg2c9hj/ASSEMBLY_LANGUAGE')">Computer Organization & Assembly Language</div>
+            <div class="content uploaddate">30/10/24</div>
+            <div class="content viewsbox">1</div>
 
+            <div class="content folders" onclick="downloadFolder('https://www.mediafire.com/folder/llwneydnkfu8e/DISCRETE_STRUCTURE')">Discrete Structure</div>
+            <div class="content uploaddate">30/10/24</div>
+            <div class="content viewsbox">1</div>
 
-            <div class="content folders" onclick="downloadFolder('Discrete Structure')">Discrete Structure</div>
-            <div class="content uploaddate">29-10-24</div>
-            <div class="content viewsbox">23</div>
-
-
-            <div class="content folders" onclick="downloadFolder('Multivariate Calculus')">Multivariate Calculus</div>
-            <div class="content uploaddate">29-10-24</div>
-            <div class="content viewsbox">23</div>
+            <div class="content folders" onclick="downloadFolder('https://www.mediafire.com/folder/5niebae6i9kxr/MULTIVARIATE_CALCULUS')">Multivariate Calculus</div>
+            <div class="content uploaddate">30/10/24</div>
+            <div class="content viewsbox">1</div>
 
 
-            <div class="content folders" onclick="downloadFolder('Quran Pak Translation')">Quran Pak Translation</div>
-            <div class="content uploaddate">29-10-24</div>
-            <div class="content viewsbox">23</div>
+            <div class="content folders" onclick="downloadFolder('https://www.mediafire.com/folder/h48vtyle8gzti/QURAN_PAK_TRANSLATION')">Quran Pak Translation</div>
+            <div class="content uploaddate">30/10/24</div>
+            <div class="content viewsbox">1</div>
 
+            <div class="content folders" onclick="downloadFolder('https://www.mediafire.com/folder/vehlkp503k1eb/PAK_STUDIES')">Pak Studies</div>
+            <div class="content uploaddate">30/10/24</div>
+            <div class="content viewsbox">1</div>
 
-            <div class="content folders" onclick="downloadFolder('Pak Studies')">Pak Studies</div>
-            <div class="content uploaddate">29-10-24</div>
-            <div class="content viewsbox">23</div>
+            <div class="content folders" onclick="downloadFolder('https://www.mediafire.com/folder/clllcsz6zjiqg/OBJECT_ORIENTED_PROGRAMMING_LAB')">OOP LAB</div>
+            <div class="content uploaddate">30/10/24</div>
+            <div class="content viewsbox">1</div>
+
+            <div class="content folders" onclick="downloadFolder('https://www.mediafire.com/folder/evt2k5r0c3llr/ASSEMBLY_LANGUAGE_LAB')">AL LAB</div>
+            <div class="content uploaddate">30/10/24</div>
+            <div class="content viewsbox">1</div>
 
         </div>
     </div>
@@ -54,10 +59,11 @@
     <div id="footer">&copy; DESIGNED & DEVELOPED BY MUHAMMAD HASSAN (CR)</div>
 
     <script>
-        function downloadFolder(folderName) {
-            // Redirect to server route for downloading the specific folder
-            window.location.href = `/download-folder/${folderName}`;
+        function downloadFolder(url) {
+            // Open the MediaFire download link in a new tab
+            window.open(url, '_blank');
         }
     </script>
 </body>
 </html>
+
