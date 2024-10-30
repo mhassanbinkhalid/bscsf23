@@ -1,0 +1,304 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Stylish", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+    background-color: #02343d;
+}
+body::before{
+    content: "";
+    background-image: url(/static/images/bg.jpg);
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    z-index: -1;
+    
+}
+#maincontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    margin-top: 50px;
+}
+#heading{
+    font-size: 70px;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: #039eb6;
+}
+
+#formcontainer{
+    border: 5px solid #039eb6;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 60px;
+    height: 300px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    box-shadow: 1px 1px 10px black;
+    
+   
+
+}
+#form{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#secondheading{
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: white;
+    text-decoration-color: #00ddff;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+}
+#username{
+    margin-bottom: 10px;
+}
+#email{
+    margin-left: 10px;
+    border: none;
+    height: 30px;
+    width: 200px;
+    color: white;
+    background: none;
+    border-bottom: 5px groove #00ddff;
+    font-size: 17px;
+}
+#email:focus{
+    outline:none;
+    
+}
+
+#password:focus{
+    outline:none;
+}
+input::placeholder {
+    color: #ffffff; /* Change this to any color you want */
+    opacity: 1;  /* Ensures full color opacity */
+}
+#password{
+    margin-left: 10px;
+    font-size: 17px;
+    border: none;
+    height: 30px;
+    width: 200px;
+   color: white;
+    background: none;
+    border-bottom: 5px groove #00ddff;
+}
+/*autofill starts*/
+input[type="email"]:-webkit-autofill,
+input[type="password"]:-webkit-autofill {
+    
+    -webkit-text-fill-color: #039eb6; /* Ensures text color remains visible */
+}
+/*autofill ends*/
+
+#Login{
+    padding: 9px;
+margin-top: 30px;
+color: #039eb6;
+border: 2px groove #00ddff;
+font-size: 15px;
+border-radius: 10px;
+font-weight: bolder;
+cursor: pointer;
+text-shadow: 1px 1px 1px black;
+}
+
+#Login:hover{
+    padding: 9px;
+margin-top: 30px;
+background-color: #039eb6;
+color: white;
+border: 2px groove white;
+font-size: 15px;
+border-radius: 10px;
+font-weight: bolder;
+text-shadow: 1px 1px 5px black;
+}
+#footer{
+background-color: black;
+color: white;
+position: fixed;
+bottom: 0px;
+height:40px;
+text-align: center;
+font-size: 25px;
+width: 100vw;
+
+}
+
+
+/*MEDIA QUERIES STARTS*/
+@media screen and (max-width:767px) and (min-height:598px) {
+    
+    #heading{
+        font-size: 32px;
+        color: white;
+        text-shadow: 1px 1px 10px black;
+        text-decoration-line: underline;
+        text-decoration-style: dashed;
+        text-decoration-color: #039eb6;
+    }
+    body::before{
+        width:100%;
+        max-width: 101%;
+        height: 100%;
+        max-height: 101%;
+        background-size: cover;
+    }
+    
+
+    #formcontainer{
+        padding: 20px;
+        margin-top: 60px;
+        height: 359px;
+        width: 247px;
+       
+        
+    }
+    #secondheading{
+        font-size: 32px;
+        margin-bottom: 40px;
+        
+    }
+    #email{
+        margin-left: 5px;
+        height: 24px;
+        width: 152px;
+        font-size: 16px;
+    }
+    #password{
+        margin-left: 5px;
+        height: 24px;
+        width: 152px;
+        font-size: 16px;
+    }
+
+    #Login{
+        padding: 6px;
+        font-size: 14px;
+        cursor: pointer;
+
+    }
+    
+    #Login:hover{
+        padding: 6px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    #Login:active{
+        padding: 6px;
+        font-size: 14px;
+        cursor: pointer;
+    background-color: rgb(212, 211, 211);
+    color: #00ddff;
+    }
+
+    #footer{
+    height:23px;
+    font-size: 15px;
+    width: 100%;
+    }
+
+  }
+
+
+  @media screen and (min-height:100px) and (max-height:597px) {
+    
+    #heading{
+        font-size: 23px;
+        color: white;
+        text-shadow: 1px 1px 10px black;
+        text-decoration-line: underline;
+        text-decoration-style: dashed;
+        text-decoration-color: #039eb6;
+    }
+    body::before{
+        width:100%;
+        max-width: 101%;
+        height: 100%;
+        max-height: 101%;
+        background-size: cover;
+    }
+    
+
+    #formcontainer{
+        padding: 20px;
+        margin-top: 20px;
+        height: 130px;
+        width: 147px;
+       
+        
+    }
+    #secondheading{
+       
+        display: none;
+    
+        
+    }
+    #form{
+        margin-top: 45px;
+    }
+    #email{
+        margin-left: 5px;
+        height: 20px;
+        width: 120px;
+        font-size: 10px;
+    }
+    #password{
+        margin-left: 5px;
+        height: 20px;
+        width: 120px;
+        font-size: 10px;
+    }
+
+    #Login{
+        padding: 6px;
+        font-size: 10px;
+        cursor: pointer;
+
+    }
+    
+    #Login:hover{
+        padding: 6px;
+        font-size: 10px;
+        cursor: pointer;
+    }
+    #Login:active{
+        padding: 6px;
+        font-size: 10px;
+        cursor: pointer;
+    background-color: rgb(212, 211, 211);
+    color: #00ddff;
+    }
+
+    #footer{
+    height:23px;
+    font-size: 10px;
+    width: 100%;
+    }
+
+  }
+
+/*MEDIA QUERIES ENDS*/

@@ -1,0 +1,166 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Stylish", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+body::before{
+    content: "";
+    background-image: url(/static/images/bg2.jpg);
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+#contentheading{
+    font-size: 4vw;
+    color: white;
+    margin-top: 10vh;
+    font-weight: bolder;
+    text-decoration: dashed;
+    text-decoration-color: #ff0088;
+    text-decoration-line: underline;
+    text-shadow: 1px 1px 2px black;
+}
+#contentcontainer{
+    
+    padding: 10px;
+    width: 60vw;
+    height: 40vh;
+    margin-top: 10vh;
+
+    border: 5px solid #a8005b;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    box-shadow: 1px 1px 10px black;
+
+}
+#containerhead{
+    
+    border: 3px groove #ff79c1;
+    border-radius: 10px;
+    color: white;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    padding: 0.5vw;
+    
+}
+.containertitle{
+    text-shadow: 1px 1px 2px black;
+    font-size: 1rem;
+    word-wrap: break-word;       /* Break long words */
+    overflow-wrap: break-word;   /* Ensure it works across browsers */
+    white-space: normal;         /* Allow line wrapping */
+
+}
+#name{
+    padding-left: 1vw;
+}
+#views{
+   text-align: center;
+    padding-left: 1vw;
+}
+#date{
+    text-align: center;
+    padding-left: 0.5vw;
+}
+#maincontent{
+    margin-top: 0.5vw;
+    display: flex;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    color: white;
+
+    height: 33vh;            /* Set a fixed height for scrollable area */
+    overflow-y: auto;        /* Enable vertical scrollbar */
+    padding-right: 0.5rem;   /* Add padding to prevent content from touching the scrollbar */
+    
+
+
+    
+}
+.content{
+    margin-left: 1vw;
+    margin-top: 1vh;
+    font-size: 1.2rem;
+}
+
+.viewsbox{
+    text-align: center;
+}
+.uploaddate{
+    text-align: center;
+}
+.folders:hover{
+    cursor: pointer;
+}
+#footer{
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    height:5vh;
+    text-align: center;
+padding-bottom: 1rem;
+padding-top: 1.2rem;
+    font-size: 1rem;
+    width: 100vw;
+    
+    }
+
+    /*media queries start*/
+    @media screen and (min-width:300px) and (max-width:752px){
+        
+        .folders{
+           
+            font-size: 12px;
+        }
+        .viewsbox{
+            font-size: 12px;
+        }
+        .uploaddate{
+            font-size: 9px;
+        }
+        #contentheading{
+            font-size: 1.6rem;
+        }
+        .containertitle{
+            font-size: 0.7rem;
+        }
+    }
+    @media screen and (max-width:300px){
+        .folders{
+           
+            font-size: 7px;
+        }
+        .viewsbox{
+            font-size: 7px;
+        }
+        .uploaddate{
+            font-size: 5px;
+        }
+        #contentheading{
+            font-size: 0.8rem;
+        }
+        .containertitle{
+            font-size: 0.4rem;
+        }
+        #footer{
+            font-size: 0.4rem;
+            padding-top: 0.1rem;
+            padding-bottom: 0.1rem;
+            height: 0.5rem;
+        }
+    }
+    /*media queries end*/

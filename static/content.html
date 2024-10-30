@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="/static/images/fav.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Stylish&display=swap" rel="stylesheet">
+    <title>CONTENT | DATA REPO | BSCS 3rd SEMESTER</title>
+    <link rel="stylesheet" href="/static/content.css">
+</head>
+<body>
+    <div id="contentheading">DOWNLOAD YOUR CONTENT</div>
+    <div id="contentcontainer">
+        <div id="containerhead">
+            <div class="containertitle" id="name">NAME</div>
+            <div class="containertitle" id="date">UPLOADED</div>
+            <div class="containertitle" id="views">FILES</div>
+        </div>
+        <div id="maincontent">
+
+            <div class="content folders" onclick="downloadFolder('OOP')">Object Oriented Programming</div>
+            <div class="content uploaddate">29-10-24</div>
+            <div class="content viewsbox">25</div>
+
+            <div class="content folders" onclick="downloadFolder('AL')">Computer Organ.. & Assembly Language</div>
+            <div class="content uploaddate">29-10-24</div>
+            <div class="content viewsbox">23</div>
+
+
+            <div class="content folders" onclick="downloadFolder('Discrete Structure')">Discrete Structure</div>
+            <div class="content uploaddate">29-10-24</div>
+            <div class="content viewsbox">23</div>
+
+
+            <div class="content folders" onclick="downloadFolder('Multivariate Calculus')">Multivariate Calculus</div>
+            <div class="content uploaddate">29-10-24</div>
+            <div class="content viewsbox">23</div>
+
+
+            <div class="content folders" onclick="downloadFolder('Quran Pak Translation')">Quran Pak Translation</div>
+            <div class="content uploaddate">29-10-24</div>
+            <div class="content viewsbox">23</div>
+
+
+            <div class="content folders" onclick="downloadFolder('Pak Studies')">Pak Studies</div>
+            <div class="content uploaddate">29-10-24</div>
+            <div class="content viewsbox">23</div>
+
+        </div>
+    </div>
+
+    <div id="footer">&copy; DESIGNED & DEVELOPED BY MUHAMMAD HASSAN (CR)</div>
+
+    <script>
+        function downloadFolder(folderName) {
+            // Redirect to server route for downloading the specific folder
+            window.location.href = `/download-folder/${folderName}`;
+        }
+    </script>
+</body>
+</html>
